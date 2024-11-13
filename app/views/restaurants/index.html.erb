@@ -1,0 +1,9 @@
+<div class="flex flex-col">
+  <h1 class="text-3xl font-bold">Restaurants</h1>
+  <% @restaurants.each do |restaurant| %>
+    <div class="flex flex-col my-4">
+      <%= restaurant.name %>
+      <%= link_to "Show", restaurant_path(restaurant), class: "text-blue-500" %>
+    </div>
+  <% end %>
+</div>

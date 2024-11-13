@@ -1,0 +1,10 @@
+<div class="flex flex-col gap-4">
+  <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name, input_html: { class: "flex flex-col mb-4" } %>
+    <%= f.input :address, input_html: { class: "flex flex-col mb-4" } %>
+    <%= f.input :phone_number, input_html: { class: "flex flex-col mb-4" } %>
+    <%= f.input :category, input_html: { class: "flex flex-col mb-4" } %>
+    <%= f.submit class: "bg-blue-500 text-white p-2 rounded-md mb-4 hover:bg-blue-700 hover:cursor-pointer" %>
+    <%= link_to "Back", restaurants_path, class: "bg-red-500 text-white p-2 rounded-md mb-4 hover:bg-red-700 hover:cursor-pointer" %>
+  <% end %>
+</div>
